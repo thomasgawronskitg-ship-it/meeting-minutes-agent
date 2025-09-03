@@ -1,0 +1,17 @@
+flask==3.0.3
+flask-cors==4.0.1
+gunicorn==21.2.0
+google-api-python-client==2.137.0
+google-auth==2.32.0
+google-auth-httplib2==0.2.0
+supabase==2.4.5
+whisperx==3.4.2
+onnxruntime>=1.19
+nltk>=3.9.1
+pandas>=2.3.0
+sentence-transformers==2.7.0
+transformers>=4.48,<5
+tqdm>=4.66.0
+openai==1.34.0
+numpy>=2.0.2
+scikit-learn>=1.4.0

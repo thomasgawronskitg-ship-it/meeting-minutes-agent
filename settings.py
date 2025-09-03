@@ -1,0 +1,20 @@
+import os
+class Settings:
+    PORT = int(os.getenv("PORT", "8080"))
+    MAX_CONTENT_LENGTH_MB = int(os.getenv("MAX_CONTENT_LENGTH_MB", "150"))
+    CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*")
+    GOOGLE_FOLDER_ID = os.getenv("GOOGLE_FOLDER_ID")
+    GDRIVE_SA_JSON_BASE64 = os.getenv("GDRIVE_SA_JSON_BASE64")
+    GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+    WHISPER_MODEL = os.getenv("WHISPER_MODEL", "base")
+    HF_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
+    CPU_COMPUTE_TYPE = os.getenv("WHISPER_CPU_COMPUTE_TYPE", "int8")
+    DEEPSEEK_BASE_URL = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
+    DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+    DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+    SUPABASE_URL = os.getenv("SUPABASE_URL")
+    SUPABASE_ANON_KEY = os.getenv("SUPABASE_ANON_KEY")
+    USE_VECTOR_JSON = os.getenv("SUPABASE_USE_VECTOR_JSON", "false").lower() == "true"
+    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+    CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "500"))
+    CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "80"))
